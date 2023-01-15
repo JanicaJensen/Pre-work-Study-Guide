@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style.css">
   <title>Prework Study Guide</title>
 </head>
 
@@ -70,6 +71,137 @@
 
     <section class="card" id="css-section">
       <h2>CSS</h2>
+      <h3>How to create a style sheet</h3>
+      <ol>
+        <li>Navigate to the directory prework-study-guide in terminal.</li>
+        <li>cd assets --></li>
+        <li>git status (need to be on main branch or switch to it) --></li>
+        <li>git checkout main --></li>
+        <li>git checkout -b feature/add-css --></li>
+        <li>Voila! Now you should be able to see style.css nestled under prework-study-guide sidebar in VSCode</li>
+      </ol>
+      <br>
+      <h3>CSS Rules</h3>
+      <br>
+      <p>CSS Rules consist of selectors and declarations. </p>
+      <br>
+      <ul>
+        <li><i>property</i> + <i>value</i> = <i>declaration</i>
+          <ul>
+            <li>declarations include punctuation of <i>property</i><strong>:</strong>
+              <i>selector</i><strong>;</strong>
+            </li>
+          </ul>
+        </li>
+        <li><i>selector</i> + <i>declaration</i> = <i>rule</i></li>
+      </ul>
+      <br>
+      <h3>How to use CSS</h3>
+      <br>
+      <ul>
+        <li>Inline... <ul>
+            <li>to style an element directly.
+            <li>which is harder to change because it requires individual handling.</li>
+            <li>by using the <i>style = " "</i> attribute.</li>
+            <li>which has the benefit of being good for quick and permanent changes.</li>
+        </li>
+      </ul>
+      </li>
+      <li>Internal CSS stylesheet
+        <ul>
+          <li>which is included in the html document itself using the <i>style</i> element tag within the <i>head</i>
+            tags.</li>
+          <li>which allows you to set rules but for that page only!</li>
+          <li>which utilizes CSS classes and IDs to change multiple things on the page using rules.</li>
+      </li>
+      </ul>
+      </li>
+      <li>External CSS stylesheet document
+        <ul>
+          <li>which is the most common and preferred way to style a webpage.</li>
+          <li>which allows for enveloping changes and keeps design uniform throughout rather than page-by-page.</li>
+          <li>which requires the use of a <i>link</i> element in the <i>head</i> tags to relay the css stylesheet
+            properties.</li>
+      </li>
+      </ul>
+      <br>
+      <h3>How to link an external stylesheet</h3>
+      <br>
+      <p>Within the <i>head</i> element, add a <i>link</i> element with a <i>rel=</i> attribute that states that it is a
+        stylesheet, and an <i>href=</i> attribute that links the document path.</p>
+      <br>
+      <h3>Useful tips</h3>
+      <br>
+      <ul>
+        <li>You can include multiple selectors for a rule by <i>selector 1,</i> -->new line<i>selector 2</i>
+        <li> * is a wild card selector that applies to every element ever...?</li>
+        <li>DRY code is <i>do not repeat yourself</i> code and this encourages the sharing of pieces of code that need
+          to be written or maintained. Kind of like, reducing a fraction or using object pronouns.</li>
+        <li>Think of html elements like boxes, from outside to inside it's <i>margin</i>,
+          <i>border</i> (like the outline), <i>padding</i> (space between border and content), and <i>content.</i>
+        </li>
+      </ul>
+      <br>
+      <h3>The fun stuff - What can you change?</h3>
+      <br>
+      <table>
+        <tr>
+          <td>margin</td>
+          <td>How much space wround the outside of an element. <br>
+            Not visible on the page, just a buffer. <br>
+            Add -left, -right,-top, -bottom for specifics. <br>
+            0 = no extra space around the element.
+          </td>
+        </tr>
+        <tr>
+          <td>padding</td>
+          <td>How much space is around the content <i>inside</i> of the element.<br>
+            You make an element bigger when you add padding because it pushes out. <br>
+            Add -left, -right,-top, -bottom for specifics. <br>
+            Expressed in pixels <i>px</i>.
+          </td>
+        </tr>
+        <tr>
+          <td>width</td>
+          <td>Defines width.<br>
+            Can be expressed in %.</td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td>Expressed in pixels.</td>
+        </tr>
+        <tr>
+          <td>text-align</td>
+          <td>center</td>
+        </tr>
+        <tr>
+          <td>display</td>
+          <td>block = each image will start on a new line.</td>
+        </tr>
+        <tr>
+          <td>background-color</td>
+          <td>Changes color of background. <br>
+            Can use color name or HEX #number.</td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>Changes the color of the text.</td>
+        </tr>
+        <tr>
+          <td>font-size</td>
+          <td>Changes the font size, 20px is a readable size for you. lol.</td>
+        </tr>
+        <tr>
+          <td>font-style</td>
+          <td>normal, italic, oblique, inherit?</td>
+        </tr>
+        <tr>
+          <td>font-weight</td>
+          <td>bold, bolder, lighter, normal</td>
+        </tr>
+
+      </table>
+
 
     </section>
 
