@@ -72,6 +72,7 @@
 
     <section class="card" id="css-section">
       <h2>CSS</h2>
+      <br>
       <h3>How to create a style sheet</h3>
       <ol>
         <li>Navigate to the directory prework-study-guide in terminal.</li>
@@ -220,6 +221,7 @@
                 <li>git commit: This will stick the changes in there for good. </li>
                 <li>git pull origin main: Checks that your current branch is synced with github.</li>
                 <li>git push origin feature/starter-code: Pushes it back to github.</li>
+                <li>git commit -m "< your message here>": adds a message to go along with your commit.</li>
               </ul>
             </li>
 
@@ -228,10 +230,98 @@
         </li>
 
       </ul>
+      <table>
+        <tr>
+          <td>Github</td>
+          <td>A web interface for Git, a version control software that allows people to make separate changes to a
+            program at the same time without getting in each other's way.</td>
+        </tr>
+        <tr>
+          <td>Repository</td>
+          <td>Holds all the filesfor your project, like a folder.</td>
+        </tr>
+        <tr>
+          <td>Branch</td>
+          <td>Workspace where you can make changes that don't affect the live site. Tip: Name your branch to best
+            describe your work.</td>
+        </tr>
+        <tr>
+          <td>.md markdwon file</td>
+          <td>This is how files are formatted in github. You can use plain text and it converts to HTML.</td>
+        </tr>
+        <tr>
+          <td>Commit Changes</td>
+          <td>Saving a new version of a file you're working on, when you add, edit or delete a file, you're making a
+            commit.</td>
+        </tr>
+        <tr>
+          <td>
+            Pull request PR
+          </td>
+          <td>Move changes from your branch to main branch, asking for your changes to be pulled in or merged into
+            another branch. Add a comment about what you change. The pull request will list the commits, the new saved
+            version of the files you worked on.</td>
+        </tr>
+        <tr>
+          <td>Merge</td>
+          <td>When your actions are pulled in, like approved and published, "DEPLOYED!"</td>
+        </tr>
+        <tr>
+          <td>Issue</td>
+          <td>Way to report new tasks you're working on, or content fixes, track progress on project board, open an
+            issue for a new task and close once done. If you are adding content to the project, then include the doc
+            file in the issue for "best practice". </td>
+        </tr>
+        <tr>
+          <td>What to have</td>
+          <td>
+            <ul>
+              <li>Github account</li>
+              <li>Github desktop</li>
+              <li>Federalist to preview changes on website.
+                <ul>
+                  <li>Federalist websites are built off of github.</li>
+                </ul>
+              </li>
+              <li>Markdown text editor</li>
+              <li>Resource guides
+                <ul>
+                  <li>18F markdown editor guide</li>
+                  <li>Project specific content management guide</li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Tools in the editorial process</td>
+          <td>Assigning - github issues and projects
+            <br>
+            <br>
+            Writing and editing - word/docs
+            <br>
+            <br>
+            Producing - github/github desktop, markdown text editor
+            <br>
+            <br>
+            Publishing - github (pull request) and Federalist
+            <br>
+            <br>
+            Revising in github - github, markdown text editor
+          </td>
+        </tr>
+      </table>
     </section>
 
     <section class="card" id="javascript-section">
       <h2>Javascript</h2>
+      <br>
+      <p style="text-align:center;"">Important little things about JS:</p>
+      <ul style=" text-align:center; list-style-position: inside;">
+        <li>JavaScript is case sensitive.</li>
+        <li>JavaScript executes in the order that it appears on the page.</li>
+        <li><i>Truthy</i> is a word people actually use to describe how it works...</li>
+        </ul>
       <table>
         <tr>
           <td>Variables</td>
@@ -239,10 +329,357 @@
             • Declare variable with <i>let</i> keyword followed by variable name.<br>
             • You can name a variable within these restrictions: should start with $, numbers, letters (upper and lower
             case), accents and unicode marks. <br>
-            • You'll give the variable a value after defining it, this value in quotation marks.</td>
+            • You'll give the variable a value after defining it, this value in quotation marks. A la "let myVariable
+            equalsign bobValue".<br>
+            • Semi-colon means <i>end of statement</i>. They are only really necessary when you put separate statements
+            on a single line, but it's considered good practice to use them at the end of each statement. <span
+              class="q">Apparently there are more rules for semi-colons.</span><br>
+
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>Functions</td>
+          <td>• 3 Essentials:
+            <ul>
+              <li>Function declaration: defines the function. </li>
+              <li>Code block: Function body, the steps of the function, what the heck is IT GOING TO DO? <span
+                  class="q">I think this is where arguments go??</span></id>
+              </li>
+              <li>Call the function: You list its name followed by () and put it in the place where you want it to run.
+              </li>
+            </ul>
+            • Functions don't run automatically, you must call them. <br>
+            • Functions make it possible to not be repeating code forever.
+            <table>
+              <tr>
+                <td>alert()</td>
+                <td>brings up a pop-up box</td>
+              </tr>
+              <tr>
+                <td>prompt()</td>
+                <td>asks user to enter data and stores it in a variable after they click OK</td>
+              </tr>
+              <tr>
+                <td>setItem()</td>
+                <td>create and store a data item</td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+        <tr>
+          <td>Variable String</td>
+          <td>Enclose in single or double quotation marks. ej: let myVariable = 'value' / or "value" ;</td>
+        </tr>
+        <tr>
+          <td>Variable Number</td>
+          <td>Numbers don't have quotes around them so the example above doesn't apply to numbers. "None" 'of' "this".
+          </td>
+        </tr>
+        <tr>
+          <td>Variable Boolean</td>
+          <td>This is a true/false value and doesn't need quotes around it. ej: let myVariable = true ;</td>
+        </tr>
+        <tr>
+          <td>Variable Array</td>
+          <td>An array allows you to store multiple values in a single reference.<br>
+            <br>
+            <span class="destacar">let myarRayBradbury = ( fahrenheit451, dandelionWine, octoberCountry )
+              ;</span><br><br>
+            In that array, you have 3 values listed and they would be refered to like: <br>
+            <br>
+            <span class="destacar">myarRayBradbury[0], myarRayBradbury[1], myarRayBradbury[2]</span><br>
+            <br>
+            Zero 0 counts since Javascript is Zero Indexed.
+          </td>
+        </tr>
+        <tr>
+          <td>Argument</td>
+          <td>Functions take arguments which are bit of data that are needed for the function to do its job. <br>
+            Arguments go inside of parentheses, separated by commas if there is more than one argument. <br>
+            eg: <i>alert</i> function makes a pop up box appear in browser window and a string as an argument will tell
+            the fucntion what to display. <br>
+            You can define your own functions for example: <br><br>
+            <span class="destacar"> Function multiply (num1, num2) { <br>
+              let result = num1 * num2; <br>
+              return result; <br>
+              }</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Return</td>
+          <td>This statement tells the browser to return the result variable out of the function. <br>
+            Variables defined inside of functions are only available inside the functions, this is <i>scoping.</i></td>
+        </tr>
+        <tr>
+          <td>Events</td>
+          <td>Real interactivity on a website requires handlers. <br>
+            Events are code structures that listen for an activity in the browser and run code in response.<br>
+            One such example is a <i>click event</i> which is something that happens when you click. That would look
+            like this:<br><br>
+            <span class="destacar">document . querySelector ("html"). addEventListener ("click", function () { <br>
+              alert ( "Ouch! Stop poking me!" ) " <br>
+              });</span> <br> <br>
+            There are lots of ways to attach am event handler to an element. In the code above, the html element is what
+            is selected and the event listener is the click. The code above is anonymous because it has no name.
+          </td>
+        </tr>
+        <tr>
+          <td>Arrow function</td>
+          <td>An anonymous function with an arrow. <br>
+            <br>
+            <span class="destacar"> document. querySelector ("html") . addEventListener ( "click" , () <b>=></b> { <br>
+              alert ("Ouch! Stop poking me!" ) ; <br>
+              });</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Variable object</td>
+          <td>This cam be anything. <br>
+            Everything in JS is an object and can be stores in a variable. <br>
+            <br>
+            <span class="destacar">let myVariable= document.querySelector ('h1' );</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Comments</td>
+          <td>You can comment things away with /* at the beginning and */ at the end. <br>
+            If the comment contains no line breaks, put it behind 2 slashes. <br>
+            <br>
+            <span class="destacar"> /* Comment comment comment, lots of comments, nothing to see here */ <br>
+              <br>
+              // This is also a comment.</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Operators</td>
+          <td>These are math symbols that do something with 2 variables. There should be a separate table for these
+            somewhere on this guide.
+          </td>
+        </tr>
+        <tr>
+          <td>Conditionals</td>
+          <td>Conditionals test if an expression is true or not. A common form of this is the <i>if...else</i>
+            statement. <br>
+            <br> <br>
+            <span class="destacar">let iceCream = "chocolate"; <br>
+              let (iceCrea, === "chocolate") { <br>
+              alert("Yay, I love chocolate ice cream!"); <br>
+              } else { <br>
+              alert ("Awww, but chocolate is my favorite..."); <br>
+              }
+            </span> <br> <br>
+            The expression inside of the <i>if ()</i> is the test. It comapres <i>iceCream</i> with the string
+            <i>chocolate</i> to see if they are equal. If it returns TRUE, then you get the yay message, otherwise it's
+            the }else{ statement.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Array
+          </td>
+          <td>
+            Single variable used to hold a group of data. Typically they hold data that is related in some way. <br>
+            <br>
+            <span class="destacar">
+              var shape = "circle"
+              <br>
+              <br>
+              vs
+              <br>
+              <br>
+              Var shapes = [ "triangle", "square", "pentagon", "circle"];
+            </span>
+            <br>
+            <br>
+            Above is a variable named <i>shapes</i> which is an array that holds a group of values, in this case, four
+            different shapes.
+            <br>
+            The following code shows a student named Lu, his name, age and whether he's enrolled.
+            <br>
+            <br>
+            <span class="destacar">
+              car studentInfo = ["Lu", 54, true];
+            </span>
+            <br>
+            <br>
+            The student's name is surrounded by quotation marks because Lu is a string and they must be contained by
+            quotation marks. 54 is a number and "true" is a boolean value so they do not require "". This array contains
+            a string, a number, and a boolean value.
+            <br>
+            <br>
+            If your code needs to reference a single item in an array, then you can reference it by its number based on
+            its position in the array.
+            <br>
+            <br>
+            If you have the shapes variable from above, then you deicde you want to call on <i>triangle</i>, then you
+            would use: <span class="destacar">Shapes[0];</span> because it's the first shape in the array and JS starts
+            at zero when numbering.
+            <br>
+            You'd end up with: <span class="destacar">console.log(shapes[0]);</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Loop</td>
+          <td>You want to reference an array and there's just too much info to do so, like a thousand items or
+            something. That's what a Loop is for.</td>
+        </tr>
+        <tr>
+          <td>For Loop</td>
+          <td>To use the For Loop we need index and array's length. Length is so that the Loop knows how many times it
+            needs to run the code until there are no items left in the array.
+            <br>
+            This contains 3 important statements.
+            <br>
+            <br>
+            <ul>
+              <li>Statement 1: Determines the starting point for the loop.
+                <ul>
+                  <li>To start at the beginning of an array, declare a variable and give it a value of 0.
+                    <ul>
+                      <li><i>var x = 0;</i></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Statement 2: Condition, as long as the variable x is less than the length of the array, the loop will
+                keep running. The loop will execute one time for each item in the array. The length built-in array
+                property will express that condition like so:
+                <ul>
+                  <li><i>x < shapes</i>
+                  </li>
+                </ul>
+              </li>
+              <li>Statement 3: Final statement. Allows the array to iterate over each item. Number increases by one each
+                time. <i>X ++ </i> is the shortcut way of writing <i>x + 1</i>, now every time the code loops x will
+                increase by 1 as so:
+                <ul>
+                  <li><i>X++</i></li>
+                </ul>
+              </li>
+            </ul>
+            <br>
+            <br>
+            A for loop starts with <i>for</i>.
+            <br>
+            <br>
+            <span class="destacar">
+              for(var x=0; x < shapes.length; x++){ <br>
+                //code block<br>
+                }
+            </span>
+            <br>
+            <br>
+            We put code that we want to execute in curly brackets. We want each of the items to be logged (shapes array)
+            in the console. Instead of the actual index number, you add X variable from our loop. Now it will go up by 1
+            and the next item will log.
+            <br>
+            <br>
+            <span class="destacar">
+              for (var x= 0; x < shapes.length; x++) { <br>
+                console.log (shapes[x]);
+                <br>
+                }
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>Length</td>
+          <td>This is a built-in property. It is here to help you. </td>
+        </tr>
+        <tr>
+          <td>Null</td>
+          <td>The absence of a value. Other are 0, -0, On, undefined, NaN or a Boolean with the value type <i>false</i>,
+            everything else is truthy.</td>
+        </tr>
+        <tr>
+          <td>var keyword</td>
+          <td>var is the keyword for variable. Variable is where we store data in our code, like a box. We use =to say
+            what we want stored in the variable.For example:
+            <br>
+            <br>
+            <span class="destacar">var shape = "circle";</span>
+          </td>
         </tr>
       </table>
-
+      <br>
+      <h3>Operators</h3>
+      <br>
+      <table>
+        <th>
+          <tr>
+            <td>Operator</td>
+            <td>Explanation</td>
+            <td>Symbol(s)</td>
+            <td>Example</td>
+          </tr>
+        </th>
+        <tr>
+          <td>Addition</td>
+          <td>Add 2 numbers together or combine 2 strings.</td>
+          <td> + </td>
+          <td><i>6 + 9; 'Hello' +'world!';</i></td>
+        </tr>
+        <tr>
+          <td> Subtraction, Multiplication, Division</td>
+          <td>These do what you'd expect them to do in basic math, eh?</td>
+          <td>-, *, /</td>
+          <td>
+            <i>9 - 3;</i>
+            <br>
+            <br>
+            <i>8*2; </i>
+            <br>
+            <br>
+            <i>9/3;</i>
+          </td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Assigns a value to a variable.</td>
+          <td> = </td>
+          <td>
+            <i>let myVariable='Bob';</i>
+          </td>
+        </tr>
+        <tr>
+          <td>Strict equality</td>
+          <td>Performs a test to see if two values are equal. Retuenda true/false (Boolean) result.</td>
+          <td> === </td>
+          <td>
+            <i>let myVariable=3; </i>
+            <br>
+            <br>
+            <i>myVariable === 4;</i>
+          </td>
+        </tr>
+        <tr>
+          <td>Not, Does-not-equal</td>
+          <td>This returns the logically opposite value of what precedes. It turs a true into a false, etc. When it is
+            used alongside the Equality operator, the negation operator tests whether 2 values are NOT equal.</td>
+          <td>!, !==</td>
+          <td>For "Not", the basic expression is true, but the comparison returns false because we negate it:
+            <br>
+            <br>
+            <i>let myVariable = 3; </i>
+            <br>
+            <br>
+            <i>!(myVariable ===3);</i>
+            <br>
+            <br>
+            "Does-not-equal" gives basically the same result with differemt syntax. Here we are testing "is myVariable
+            NOT equal to 3". This returns false because myVariable IS equal to 3:
+            <br>
+            <br>
+            <i>let myVariable = 3;</i>
+            <br>
+            <br>
+            <i>myVariable !==3;</i>
+          </td>
+        </tr>
+      </table>
     </section>
   </main>
 
