@@ -21,9 +21,6 @@ N/A
 
 The study guide is divided into 4 sections titled HTML, CSS, GIT, and JavaScript. You can see notes under each section, these are not all-inclusive by any means but are just some of the most important/most-used concepts that I referenced to make the study guide in the first place. If you really want to, you can open up the console and see that there is a teeny little bit of Javascript that will pick a random topic for you to study, who knows, it could get it right on the first try! But if it doesn't, keep refreshing, eventually it'll say the name of the thing you need to practice most. Only you would know. Gasp! 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
 
 ## Credits
 
